@@ -23,7 +23,7 @@ This will build the helper app and push a "native messaging" manifest to firefox
 Or you can package the add-on yourself, using 
 ```
 cd add-on
-zip -r -FS ./syncTabs.xpi * --exclude '*.git*'
+zip -r -FS ./syncTabs.xpi * --exclude '*.git*' '*.xpi'
 ```
 That will create an **unsigned** add-on. Firefox will refuse to install it until you sign it. It's a very annoying (but short) process you can read about [here](https://extensionworkshop.com/documentation/publish/distribute-pre-release-versions/)
 
