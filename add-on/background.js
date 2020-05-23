@@ -25,8 +25,6 @@ function updateTabs(tabId, isOnRemoved) {
     });
 
     var port = browser.runtime.connectNative("syncTabs");
-    var tabsJson = JSON.stringify(syncTabs, null, 2);
-    console.log(tabsJson);
     port.postMessage(syncTabs);
     port.disconnect();
 
