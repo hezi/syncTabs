@@ -1,0 +1,26 @@
+{
+  "browser_specific_settings": {
+    "gecko": {
+      "id":"syncTabs@jorgecohen.codes",
+      "strict_min_version": "58.0a1"
+    }
+  },
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+  },
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "syncTabs",
+    "default_popup": "tabs.html"
+  },
+  "description": "Sync your firefox tabs with MobileSafari on iOS",
+  "homepage_url": "https://github.com/hezi/syncTabs",
+  "manifest_version": 2,
+  "name": "syncTabs",
+  "permissions": [
+    "tabs",
+    "nativeMessaging"
+  ],
+  "version": "1.0"
+}

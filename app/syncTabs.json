@@ -1,0 +1,7 @@
+{
+  "name": "syncTabs",
+  "description": "Sync your firefox tabs with MobileSafari on iOS",
+  "path": "/usr/local/bin/syncTabs",
+  "type": "stdio",
+  "allowed_extensions": [ "syncTabs@jorgecohen.codes" ]
+}
