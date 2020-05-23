@@ -18,7 +18,7 @@ make install
 
 This will build the helper app and push a "native messaging" manifest to firefox so it knows how to run our helper.
 
-3. Install the Firefox add-on, located in `./add-on/synctabs-1.0-fx.xpi` (this is a pre-signed copy of the add-on)
+3. Install the Firefox add-on, located in `./add-on/synctabs-1.0.1-fx.xpi` (this is a pre-signed copy of the add-on)
 
 Or you can package the add-on yourself, using 
 ```

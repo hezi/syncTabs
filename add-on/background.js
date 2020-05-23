@@ -9,7 +9,6 @@ function genUUID() {
 function updateTabs(tabId, isOnRemoved) {
   browser.tabs.query({})
   .then((tabs) => {
-    console.log(tabs);
     let length = tabs.length;
 
     // onRemoved fires too early and the count is one too many.
@@ -39,5 +38,11 @@ browser.tabs.onRemoved.addListener(
 browser.tabs.onCreated.addListener(
   (tabId) => { updateTabs(tabId, false);
 });
+
+browser.alarms.create("tab-sync-alarm", {
+  periodInMinutes: 1
+});
+
+browser.alarms.onAlarm.addListener((alarmInfo) => { updateTabs(); });
 
 updateTabs();
