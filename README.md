@@ -9,7 +9,7 @@ Follow me on twitter [@jorgewritescode](http://twitter.com/jorgewritescode)
 1. Make sure you have an iCloud account with safari syncing turned on:
 ![icloud](https://github.com/hezi/syncTabs/blob/master/readme/icloud.png?raw=true)
 
-2. Make and install the native helper app:
+2. Build and install the native helper app:
 ```
 cd app
 make build
