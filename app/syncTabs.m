@@ -49,8 +49,8 @@
 
 @protocol WBSSafariBookmarksSyncAgentProtocol
 - (void)saveTabsForCurrentDeviceWithDictionaryRepresentation:(NSDictionary *)dict 
-											deviceUUIDString:(NSString *)uuidString
-										   completionHandler:(void (^)(NSError *))completionHandler;
+				            deviceUUIDString:(NSString *)uuidString
+					   completionHandler:(void (^)(NSError *))completionHandler;
 @end
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -83,8 +83,8 @@
 	};
 
 	[[self.connection remoteObjectProxy] saveTabsForCurrentDeviceWithDictionaryRepresentation:dict 
-																			 deviceUUIDString:[[JCDefaults sharedInstance] deviceName] 
-																			completionHandler:completionHandler];
+										 deviceUUIDString:[[JCDefaults sharedInstance] deviceName] 
+										completionHandler:completionHandler];
 }
 
 @end
